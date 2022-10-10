@@ -72,7 +72,7 @@ class Car {
 
     // Get & Set levelFuel
 
-    public function getLevelFuel(): string
+    public function getLevelFuel(): int
     {
         return $this->levelFuel;
     }
@@ -114,9 +114,9 @@ class Car {
         $sentence = "";
             while ($this->currentSpeed > 0) {
             $this->currentSpeed--;
-            $sentence .= "Brake !!!";
+            $sentence .= "Oh god, brake !!!";
         }
-        $sentence .= "I'm stopped !";
+        $sentence .= "Thank god, I'm stopped !";
             return $sentence;
         }
     
